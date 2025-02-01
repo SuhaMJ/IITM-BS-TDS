@@ -1,12 +1,13 @@
-name:  Action
+name: My Action
 
 on:
   push:
     branches:
-      - master  
+      - master  # This triggers the workflow on push to the 'main' branch
 
 jobs:
   test:
+    runs-on: ubuntu-latest  # Specifies the environment
     steps:
-      - name: 21f2001415@ds.study.iitm.ac.in
+      - name: 21f2001415@ds.study.iitm.ac.in  # Your custom step name
         run: echo "Hello, world!"
